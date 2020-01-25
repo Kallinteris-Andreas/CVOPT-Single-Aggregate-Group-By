@@ -1,6 +1,10 @@
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+
 public class CVOPT_SASG {
 
     public static void main(String[] args) throws Exception {
+        /*
 
         // the port to connect to
         final int port;
@@ -20,5 +24,7 @@ public class CVOPT_SASG {
 
         env.execute("Socket Window WordCount");
     }
+    *
+         */
 }
 

@@ -1,6 +1,10 @@
 # CVOPT-Single-Aggregate-Group-By
 
-One Paragraph of project description goes here
+This project is an flink implemention of the first algorithm of this
+[work](https://arxiv.org/pdf/1909.02629.pdf) an algorithm for computing a random single
+aggregate single group by querry.
+This project uses the flink datastream API.
+
 
 ## Getting Started
 
