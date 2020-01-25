@@ -23,7 +23,6 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Flink](https://flink.apache.org/) - Computetion of data streams
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Contributing
