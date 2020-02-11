@@ -8,22 +8,33 @@ This project uses the flink datastream API.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Start kafka server
+start zookeeper and kafka
+```
+bin/zookeeper-server-start.sh ./config/zookeeper.properties &
+bin/kafka-server-start.sh ./config/server.properties
+```
+Initliaze the topics (queues)
+```
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic inputTopic
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic OutputTopic
+```
+then start the class simple producer and run
+```
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic inputTopic` --from-beginning
+```
+to make sure everything works fine
 
-### Prerequisites
+## Prerequisites
 
 ```
 apache flink 1.9.1
 ```
 
-### Installing
+## Installing
 
 ```
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
